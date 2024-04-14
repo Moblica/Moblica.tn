@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color:rgb(217, 220, 222) ;
+        }
+        .header {
+            margin-top: 10px;
+            width: 100%;
+            background-color: black;
+            padding: 5px 0; /* Reduced padding to decrease height */
+            display: flex;
+            justify-content: center; /* Center the ul horizontally */
+        }
+        .header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        .header li {
+            margin-right: 20px;
+        }
+        .header h2 {
+            color: #fff;
+            font-weight: 100;
+            font-size: 22px;
+        }
+        img {
+            width: auto;
+            height: 80px; /* Adjusted height of the image */
+            display: block;
+            margin: 0 auto;
+        }
+        .social-icon {
+            margin-right: 20px; /* Add some spacing between icons */
+        }
+        .social-icon img {
+            height: 30px; /* Adjust the height of the social media icons */
+            margin-right: 10px; /* Add some spacing between the icon and text */
+        }
+        .functional-icon {
+            margin-right: 20px; /* Add some spacing between functional icons */
+        }
+        .functional-icon img {
+            height: 30px; /* Adjust the height of the functional icons */
+            margin-right: 10px; /* Add some spacing between the icon and text */
+        }
+        .logo-container {
+            display: flex; /* Ensures all containers are on the same line */
+            align-items: center; /* Aligns items vertically */
+            margin-right: 20px; /* Add spacing between the logo and functional icons */
+        }
+        .functional-icons {
+            margin-right: 20px; /* Add spacing between the functional icons */
+        }
+        .functional-icons img {
+            height: 30px; /* Adjust the height of the functional icons */
+            margin-right: 10px; /* Add some spacing between the icon and text */
+        }
+        .search-bar {
+            position: relative;
+            margin-left: auto;
+            margin-right: 20px; /* Add spacing between the search bar and other elements */
+            width: 200px;
+        }
+        .search-bar input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .search-bar button {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 8px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        /* Additional styles for the block */
+        .additional-block {
+            width: 250px;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-category {
+            border-radius: 10px;
+            background-color: #ffffff;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .additional-category-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .additional-slider-container {
+            margin-top: 20px;
+        }
+
+        .additional-slider {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 5px;
+            border-radius: 5px;
+            background: #d3d3d3;
+            outline: none;
+            opacity: 0.7;
+            -webkit-transition: .2s;
+            transition: opacity .2s;
+            margin-bottom: 20px;
+        }
+
+        .additional-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+
+        .additional-slider::-moz-range-thumb {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+        }
+
+        .additional-blocks-wrapper {
+            float: right;
+            width: 30%; /* Adjust the width as needed */
+            margin-top: 10px;
+        }
+
+        .additional-block {
+            margin-bottom: 20px; /* Add some space between blocks */
+            /* Add your styles for .additional-block here */
+        }
+
+        .additional-block-2 {
+            /* Add your styles for .additional-block-2 here */
+        }
+        .black-block {
+            background-color: black;
+            padding: 20px;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+
+        .black-block div {
+            width: 20%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .black-block p {
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            color: white;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li class="social-icon"><a href="#"><img src="fb.png" alt="Facebook icon"></a></li>
+            <li class="social-icon"><a href="#"><img src="ista.png" alt="Instagram icon"></a></li>
+            <li class="social-icon"><a href="#"><img src="yt.png" alt="YouTube icon"></a></li>
+            <li><h2><a href="inscription.html">Inscription</a></h2></li> <!-- Link to sign-up page -->
+            <li><h2>Chemin de requête</h2></li>
+            <li><h2>Appeler vous</h2></li>
+            <li><h2>Comparer (0 articles)</h2></li>
+        </ul>
+    </div>
+    <img src="logo.jpg">
+    <div class="logo-container">
+        <ul>
+            <li class="social-icon"><a href="#"><img src="arrow.png" alt="arrow"></a></li>
+            <li class="social-icon"><a href="#"><img src="shopping-cart.png" alt="Shopping icon"></a></li>
+            <li class="social-icon"><a href="#"><img src="heart.png" alt="Like list icon"></a></li>
+            <li class="social-icon"><a href="#"><img src="user.png" alt="Account icon"></a></li>
+
+        </ul>
+    </div>
+    <div class="custom-search-container">
+        <div class="block block-content">
+            <form class="form minisearch -small -result" id="search_mini_form" action="" method="get">
+                <div class="field search">
+                    <div class="control">
+                        <input id="search" type="text" name="q" value="" placeholder="Qu'est-ce que tu cherches" class="input-text" maxlength="128" role="combobox" aria-haspopup="false" aria-autocomplete="both" autocomplete="off">
+                        <button class="amsearch-loupe" title="Recherche" type="submit" data-amsearch-js="loupe"></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <nav class="navigation-menu">
+        <ul>
+          <li>
+            <a href="#">Meubles 🇻</a>
+            <ul>
+              <li><a href="#">Salons</a></li>
+              <li><a href="#">Salle à manger</a></li>
+              <li><a href="#">Chambres</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Produits ménagers 🇻</a>
+            <ul>
+              <li><a href="#">La cuisine</a></li>
+              <li><a href="#">Décoration d'intérieur</a></li>
+              <li><a href="#">Accueil et présentation</a></li>
+            </ul>
+          </li>
+          <li>
+              <a href="#">Les appareils électriques 🇻</a>
+              <ul>
+                <li><a href="#">La cuisine</a></li>
+                <li><a href="#">Décoration d'intérieur</a></li>
+                <li><a href="#">Accueil et présentation</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Collection ramadan 🇻</a>
+              <ul>
+                <li><a href="#">La cuisine</a></li>
+                <li><a href="#">Décoration d'intérieur</a></li>
+                <li><a href="#">Accueil et présentation</a></li>
+              </ul>
+            </li>
+            <li class="special-item">
+              <a href="#">Vente</a>
+            </li>
+        </ul>
+      </nav>
+      
+
+<div class="block-content center-container">
+    <div class="square">
+        <div class="apptrian-subcategories-category-wrapper">
+            <div class="apptrian-subcategories-category 2">
+                <div class="apptrian-subcategories-category-image">
+
+                        <img src="salon.png" alt="Salon">
+
+                </div>
+                <div class="apptrian-subcategories-category-name" style="background-color: rgb(217, 220, 222);">
+
+                        <span>Salon</span>
+
+                    <img class="sub-icon" src="saloni.png" alt="Pen Icon">
+                </div>
+            </div>
+        </div>
+        <div class="apptrian-subcategories-category-wrapper">
+            <div class="apptrian-subcategories-category 2">
+                <div class="apptrian-subcategories-category-image">
+
+                        <img src="chamber.png" alt="Chambre">
+
+                </div>
+                <div class="apptrian-subcategories-category-name" style="background-color: rgb(217, 220, 222);">
+
+                        <span>Chambre</span>
+
+                    <img class="sub-icon" src="bed.png" alt="Pen Icon">
+                </div>
+            </div>
+        </div>
+        <div class="apptrian-subcategories-category-wrapper">
+            <div class="apptrian-subcategories-category 2">
+                <div class="apptrian-subcategories-category-image">
+
+                        <img src="sam.png" alt="Salle à manger">
+
+                </div>
+                <div class="apptrian-subcategories-category-name" style="background-color: rgb(217, 220, 222);">
+
+                        <span>Salle à manger</span>
+
+                    <img class="sub-icon" src="table.png" alt="Pen Icon">
+                </div>
+            </div>
+        </div>
+        <div class="apptrian-subcategories-category-wrapper">
+            <div class="apptrian-subcategories-category 2">
+                <div class="apptrian-subcategories-category-image">
+
+                        <img src="mdb.png" alt="Meubles de bureau">
+
+                </div>
+                <div class="apptrian-subcategories-category-name" style="background-color: rgb(217, 220, 222);">
+
+                        <span>Meubles de bureau</span>
+
+                    <img class="sub-icon" src="desk.png" alt="Pen Icon">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+<div class="additional-blocks-wrapper">
+    <div class="additional-block">
+        <div class="additional-category">
+<!-- HTML -->
+
+
+            <div class="additional-category">
+                <div class="additional-category-title">Catégorie :</div>
+                <div class="additional-category-details">
+                    <div class="additional-category-detail">-Salons</div>
+                    <div class="additional-category-detail">-Chambres à coucher</div>
+                    <div class="additional-category-detail">-Salle à manger</div>
+                    <div class="additional-category-detail">-Mobilier de bureau</div>
+                    <div class="additional-category-detail">-Entrée de la maison</div>
+                </div>
+            </div>
+            <div class="additional-category-title">Prix  :</div>
+            <div class="additional-category-details">
+                <div class="additional-slider-container">
+                    <input type="range" min="10" max="400" value="50" class="additional-slider" id="additionalPriceRange">
+                    <p>Plage de prix: <span id="additionalPriceValue">50</span> د.ت</p>
+                </div>
+            </div>       
+            <div class="additional-category-title">Design de table :</div>
+            <div class="table-design">
+                <!-- Placeholder for table photos -->
+                <img class="table-photo" src="tb1.png" alt="Coffee Table 1">
+                <img class="table-photo" src="tb2.png" alt="Coffee Table 2">
+            </div>
+        </div>
+        <div class="additional-category">
+            <div class="additional-category-title">Couleur</div>
+            <div class="color-options">
+                <div class="color-option">
+                    <img class="color-photo" src="red.png" alt="Red">
+                    <span class="color-name">Rouge</span>
+                </div>
+                <div class="color-option">
+                    <img class="color-photo" src="blue.png" alt="Blue">
+                    <span class="color-name">Bleu</span>
+                </div>
+                <div class="color-option">
+                    <img class="color-photo" src="black-circle.png" alt="Black">
+                    <span class="color-name">Noir</span>
+                </div>
+                <div class="color-option">
+                    <img class="color-photo" src="carbon.png" alt="carbon">
+                    <span class="color-name">Carbone</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="additional-block-2">
+    <div class="icon-wrapper">
+        <img class="additional-icon-1" src="list.png" alt="Icône 1">
+    </div>
+    <div class="icon-wrapper">
+        <img class="additional-icon-2" src="option.png" alt="Icône 2">
+    </div>
+    <div class="sort-by">
+        <label for="sort-dropdown">Trier par :</label>
+        <select id="sort-dropdown">
+            <option value="price">Prix</option>
+            <option value="name">Nom</option>
+            <option value="date">Date</option>
+        </select>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="grid-container">
+    <div class="container">
+      <img class="photo" src="p1.jpg" alt="Votre photo">
+      <p><strong>Canapé d'angle Moukalla - Beige</strong></p>
+      <p><strong>Prix : 12 DT</strong></p>
+      <div class="order-button">➡ Ajouter au panier ⬅</div>
+    </div>
+    <div class="container">
+        <img class="photo" src="p2.jpg" alt="Votre photo">
+        <p><strong>Table d'appoint moderne avec éclairage - Blanc</strong></p>
+        <p><strong>Prix : 100 DT</strong></p>
+        <div class="order-button">➡ Ajouter au panier ⬅</div>
+    </div>
+    <div class="container">
+      <img class="photo" src="p3.webp" alt="Votre photo">
+      <p><strong>Ensemble de chambre Madura - Marron clair - 5 pièces</strong></p>
+      <p><strong>Prix : 55 DT</strong></p>
+      <div class="order-button">➡ Ajouter au panier ⬅</div> 
+    </div>
+    <div class="container"> 
+        <img class="photo" src="p4.jpg" alt="Votre photo"> 
+        <p><strong>Support mural pour télévision Alpierce Elm Cove - Blanc</strong></p>
+        <p class="old-price"><strong>Ancien prix : 50 DT</strong></p> 
+        <p class="new-price">Nouveau prix : <span class="discount-price">35 DT</span></p>
+        <div class="order-button">➡ Ajouter au panier ⬅</div> 
+    </div>
+    <div class="container">
+      <img class="photo" src="p5.jpg" alt="Votre photo">
+      <p><strong>Table TV avec plateau en verre Hoqa Simple</strong></p>
+      <p><strong>Prix : 20 DT</strong></p>
+      <div class="order-button">➡ Ajouter au panier ⬅</div>
+    </div>
+    <div class="container">
+        <img class="photo" src="p6.jpg" alt="Votre photo">
+        <p><strong>Console Hoqa Rustique</strong></p>
+        <p class="old-price"><strong>Ancien prix : 120 DT</strong></p>
+        <p class="new-price">Nouveau prix : <span class="discount-price">84 DT</span></p>
+        <div class="order-button">➡ Ajouter au panier ⬅</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+  <div class="black-block">
+    <div>
+        <p class="title">Informations sur nous</p>
+        <p> ~    </p>
+        <p>-Numéro d'enregistrement commercial: 4030528033</p>
+        <p>-Numéro d'identification fiscale: 310926161500003</p>
+    </div>
+    <div>
+        <p class="title">Qui sommes-nous</p>
+        <p>- nourchen</p>
+        <p>- hasna</p>
+        <p>- menyar</p>
+        <p>- maram</p>
+        <p>- senda</p>
+        <p>- ghofran</p>
+    </div>
+    <div>
+        <p class="title">Liens utiles</p>
+        <p>-Suivre votre commande</p>
+        <p>-Contactez-nous</p>
+        <p>-Termes et conditions</p>
+        <p>-Mon compte</p>
+        <p>-Programme de fidélité</p>
+        <p>-FAQ</p>
+        <p>-Guide client Tabby</p>
+        <p>-Guide client Tamara</p>
+        <p>-Guide client Tamam</p>
+    </div>
+
+    <div>
+        <p class="title">Adresse:</p>
+        <p>-Boujelida laaroussa</p>
+        <p>Besoin d'aide ?:</p>
+        <p>-Contactez-nous sur WhatsApp : 00966920122468</p>
+        <p>-Email : support@moblica.com</p>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="footer-bottom">
+    <div class="footer-bottom-container">
+        <div class="custom-block f-right">
+
+        </div>
+        <strong>
+            <strong>
+                 <address>© moblica, Inc. 2021Présent. Tous droits réservés.</address>
+                </strong>
+            </strong>
+        </div>
+    </div>
+
+
+
+
+
+
+<script>
+    const additionalPriceRange = document.getElementById('additionalPriceRange');
+    const additionalPriceValue = document.getElementById('additionalPriceValue');
+
+    // Update the value displayed beside the slider
+    additionalPriceValue.textContent = additionalPriceRange.value;
+
+    // Add event listener to update the displayed value when the slider changes
+    additionalPriceRange.addEventListener('input', function() {
+        additionalPriceValue.textContent = this.value;
+    });
+</script>
+
+</body>
+</html>
