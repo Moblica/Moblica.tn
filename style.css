@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 220, 222);
+}
+
+.header {
+    margin-top: 5px;
+    width: 100%;
+    background-color: black;
+    padding: 10px; /* Adding padding to contain the border */
+    height: 40px;
+}
+
+.header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 35px;
+}
+
+.header li {
+    margin-right: 35px;
+}
+
+.header h2 {
+    color: #fff;
+    font-weight: 100;
+    font-size: 22px;
+}
+
+img {
+    width: 50px;
+    height: 80px;
+    display: block; /* To center the image */
+    margin: 20px; /* To center the image horizontally */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+.logo-container li {
+    display: inline-block;
+    margin-left: -20px;
+}
+
+.logo-container {
+    margin-left: 500px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+}
+
+.block-content {
+    background-color: rgb(217, 220, 222);
+    border: 1px solid #ddd;
+    padding: -10px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.block-content .form {
+    display: flex;
+    align-items: center;
+}
+
+.block-content .form .field.search {
+    margin-right: 10px;
+}
+
+.block-content .form .control {
+    position: relative;
+}
+
+.block-content .form .control input[type="text"] {
+    width: 450px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.block-content .form .control button.amsearch-loupe {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    background-image: url(search.png); /* Replace with your search icon */
+    background-size: cover;
+}
+
+.navigation-menu {
+    width: 70%;
+    margin: 0 auto; /* Center the navigation menu */
+    margin-left: 230px;
+}
+
+.navigation-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center; /* Center the text within the menu */
+}
+
+.navigation-menu ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+
+}
+
+.navigation-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: inline-block;
+
+}
+
+.navigation-menu ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(217, 220, 222);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    background-color: #fff;
+}
+
+.navigation-menu ul li:hover ul {
+    display: block;
+}
+
+.navigation-menu ul li ul li {
+    display: block;
+    width: 200px;
+    padding: 10px;
+}
+
+.navigation-menu ul li ul li a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+}
+
+
+
+.square {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.square .apptrian-subcategories-category-wrapper {
+    text-align: center;                         
+    margin: 30px; /* Adjust the margin to make the squares closer */
+    margin-left: 10px;
+}
+
+.square img {
+    width: 170px; /* Adjust the width of the images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+img.sub-icon {
+    width: 30px; /* Specify the width of the icons */
+    height: auto; /* Maintain aspect ratio */
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin-right: 200px;
+}
+
+
+
+
+
+img.color-photo {
+    width: 52px; /* Change the width to your desired size */
+    height: 50px; /* Change the height to your desired size */
+}
+
+
+
+.color-name {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.apptrian-subcategories-category-wrapper{
+    height: 200px;
+}
+
+
+
+.additional-block-2 {
+    width: 43.5%; /* Adjust width as needed */
+    margin-left: 24%; /* Set margin-left to 15% */
+    margin-right: 55%; /* Set margin-right to 68% */
+    border: 3px solid #ccc;
+    border-radius: 5px;
+    padding: 1px; /* Maintain padding */
+    margin-bottom: 8px; /* Add margin to create space between blocks */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+div.icon-wrapper {
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.sort-by {
+    margin-left:auto; /* Move to the left */
+}
+
+.additional-icon-1{
+    width: 15px; /* Smaller width */
+    height: auto; /* Maintain aspect ratio */
+}
+.additional-icon-2 {
+    width: 15px; /* Smaller width */
+    height: auto; /* Maintain aspect ratio */
+}
+.custom-search-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+.special-item {
+    background-color: red;
+    width: 10%; /* Ensure full width */
+    text-align: center; /* Center the text */
+    margin-left: 8px;
+}
+div.additional-block-2{
+    align-items: center;
+}
+div.additional-block {
+    width: 250px;
+    background-color:rgb(217, 220, 222);
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+div.additional-category {
+    border-radius: 10px;
+    background-color: rgb(217, 220, 222);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.additional-category {
+    margin-bottom: 20px;
+}
+
+.additional-category-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color-option {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+img.color-photo {
+    width: 52px; /* Change the width to your desired size */
+    height: 50px; /* Change the height to your desired size */
+}
+.additional-blocks-wrapper {
+    float: right;
+    width: 30%; /* Adjust the width as needed */
+    margin-top: 1000px;
+    height: 3000px; /* Set a fixed height */
+    /* or */
+    max-height: 880px; /* Set a maximum height */
+    overflow-y: auto; /* Add scrollbars if content exceeds the height */
+}
+
+
+.additional-block {
+    margin-bottom: 200px; /* Add some space between blocks */
+    /* Add your styles for .additional-block here */
+    height: 820px;
+
+}
+
+.additional-block-2 {
+    /* Add your styles for .additional-block-2 here */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 278.33px); /* Adjusted width */
+    gap: 50px; /* Increased gap */
+    padding: 20px;
+    margin-left: 380px;
+  }
+  
+  .container {
+    border: 0px solid lightgray;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Adjusted width */
+    height: 300px; /* Adjusted height to match width */
+  }
+  
+  .photo {
+    width: 230px;
+    height: 230px;
+    border-radius: 15px; /* Changed border-radius to make it square */
+    margin: 0 auto 20px; /* Increased margin for spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .order-button {
+    border: 1px solid brown;
+    border-radius: 13px;
+    padding: 10px;
+    margin-top: 8px;
+    background-color: rgb(217, 220, 222);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 200px;
+    margin-left: 30px;
+  }
+  
+  .order-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .icon {
+    font-size: 18px;
+    margin: 5px;
+  }
+  /* Existing styles */
+
+.old-price {
+    text-decoration: line-through; /* Add line-through for old price */
+    color: black; /* Set color for old price */
+  }
+  
+  .new-price {
+    font-weight: bold; /* Make new price bold */
+  }
+  
+  .discount-price {
+    background-color: red; /* Set background color for discount */
+    color: black; /* Set color for discount */
+    padding: 2px 5px; /* Add padding to the discount */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+  }
+.table-photo{
+    width: 150px;
+    height: 150px;
+}
+
+
+.footer-bottom-container{
+    width: 400px;
+    height: 30px;
+}
